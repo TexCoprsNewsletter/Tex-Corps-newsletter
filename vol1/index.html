@@ -2,38 +2,41 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>TeX-Corps Insight</title>
 
 <style>
-body{
+*{
     margin:0;
     padding:0;
-    background:#fff;
-    text-align:center;
+    box-sizing:border-box;
 }
 
-.newsletter-wrap{
-    max-width:587px;
-    margin:0 auto;
-}
-
-.newsletter-wrap img{
+html,
+body{
     width:100%;
-    height:auto;
+    background:#ffffff;
+    overflow-x:hidden;
+}
+
+#newsletter{
     display:block;
+    width:100%;
+    max-width:100%;
+    height:auto;
     border:0;
 }
 </style>
-
 </head>
+
 <body>
 
-<div class="newsletter-wrap">
-    <img
-        src="./img.png"
-        alt="TeX-Corps Insight"
-    >
-</div>
+<img
+    id="newsletter"
+    src="img.png"
+    alt="TeX-Corps Insight"
+>
 
 </body>
 </html>
