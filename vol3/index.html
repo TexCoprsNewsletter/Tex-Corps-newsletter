@@ -30,21 +30,6 @@ body{
     position:absolute;
     display:block;
     z-index:10;
-}
-
-.preview-mode #newsletter{
-    cursor:pointer;
-}
-
-.preview-mode .link-area{
-    pointer-events:none;
-}
-
-.full-mode #newsletter{
-    cursor:default;
-}
-
-.full-mode .link-area{
     pointer-events:auto;
 }
 </style>
@@ -67,19 +52,29 @@ body{
 <a class="link-area" style="left:62.22%; top:38.48%; width:20.74%; height:1.56%;" href="https://blog.naver.com/texcorps/224305777861" target="_blank"></a>
 
 <a class="link-area" style="left:15.20%; top:41.99%; width:79.06%; height:1.76%;" href="https://www.soslab.co/board/board.php?bo_table=press&idx=37" target="_blank"></a>
+
 <a class="link-area" style="left:15.20%; top:44.04%; width:79.06%; height:1.66%;" href="https://kisguard.imweb.me/59" target="_blank"></a>
+
 <a class="link-area" style="left:15.20%; top:46.09%; width:79.06%; height:1.61%;" href="https://aldaver.co.kr/bbs/board.php?bo_table=sub5_1&wr_id=60" target="_blank"></a>
+
 <a class="link-area" style="left:15.20%; top:48.10%; width:79.06%; height:1.66%;" href="https://www.mt.co.kr/future/2026/04/27/2026041411294576405" target="_blank"></a>
+
 <a class="link-area" style="left:15.20%; top:50.10%; width:79.06%; height:1.66%;" href="https://www.mt.co.kr/future/2026/05/12/2026051208410944772" target="_blank"></a>
+
 <a class="link-area" style="left:15.20%; top:52.15%; width:79.06%; height:1.66%;" href="https://www.rs101.co.kr/boards/32/view?referer=%2Fpages%2Fnews" target="_blank"></a>
 
 <a class="link-area" style="left:6.16%; top:67.09%; width:88.09%; height:1.46%;" href="https://compa.re.kr/cop/bbs/rnw/selectBoardArticle.do?bbsId=BBSMSTR_DDDDDDDDDDDD&nttId=3949&goMenuNo=1232000" target="_blank"></a>
+
 <a class="link-area" style="left:6.16%; top:68.60%; width:88.09%; height:1.46%;" href="https://www.nnfc.re.kr/bbs/BBSMSTR_000000000002/B000000006016Zl2vB2.do" target="_blank"></a>
+
 <a class="link-area" style="left:6.16%; top:70.17%; width:88.09%; height:1.42%;" href="https://www.iris.go.kr/contents/retrieveBsnsAncmView.do?ancmId=021934&ancmPrg=ancmPre" target="_blank"></a>
+
 <a class="link-area" style="left:6.16%; top:71.68%; width:88.09%; height:1.42%;" href="https://www.nrf.re.kr/biz/notice/view?ac=view&postNo=272832" target="_blank"></a>
+
 <a class="link-area" style="left:6.16%; top:73.24%; width:88.09%; height:1.42%;" href="https://www.toprnd.or.kr/sub5/gongji_view.asp?smenu=sub5&stitle=subtitle5_4&idx=53" target="_blank"></a>
 
 <a class="link-area" style="left:6.16%; top:74.71%; width:88.09%; height:1.46%;" href="#" target="_blank"></a>
+
 <a class="link-area" style="left:6.16%; top:76.27%; width:88.09%; height:1.46%;" href="#" target="_blank"></a>
 
 <a class="link-area" style="left:40.45%; top:83.89%; width:19.71%; height:1.56%;" href="https://docs.google.com/forms/d/e/1FAIpQLSdRnAt2cbrHCMZmQoMPbjDOcSz-B6cBw2VCnwQ8FlOHMZmtmQ/viewform" target="_blank"></a>
@@ -91,22 +86,6 @@ body{
 <a class="link-area" style="left:66.94%; top:88.62%; width:30.60%; height:2.69%;" href="https://texcorps.stibee.com/" target="_blank"></a>
 
 </div>
-
-<script>
-const isFullView =
-    new URLSearchParams(window.location.search).get('full') === '1';
-
-document.body.classList.add(isFullView ? 'full-mode' : 'preview-mode');
-
-if(!isFullView){
-    document.getElementById('newsletter').addEventListener('click', function(){
-        window.open(
-            window.location.pathname + '?full=1',
-            '_blank'
-        );
-    });
-}
-</script>
 
 </body>
 </html>
