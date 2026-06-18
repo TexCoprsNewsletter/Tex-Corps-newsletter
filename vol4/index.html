@@ -32,53 +32,91 @@ body{
     z-index:10;
     box-sizing:border-box;
 }
+
+/* 좌표 확인할 때만 주석 해제 */
+/*
+.link-area{
+    background:rgba(255,0,0,0.25);
+    border:1px solid red;
+}
+*/
 </style>
 </head>
 
 <body>
 
-<div class="newsletter-wrap">
+<div class="newsletter-wrap" id="newsletterWrap">
 
 <img
-    src="https://texcoprsnewsletter.github.io/Tex-Corps-newsletter/vol4/img4.png" 
+    id="newsletterImg"
+    src="https://texcoprsnewsletter.github.io/Tex-Corps-newsletter/vol4/img4.png"
     alt="TeX-Corps Insight"
 >
 
-<a class="link-area" style="left:25.96%; top:8.07%; width:48.14%; height:5.55%;" href="https://compa.re.kr/cop/bbs/rnw/selectBoardArticle.do;jsessionid=F1B349D10F2F60C694FF9D724A7F7025?bbsId=BBSMSTR_DDDDDDDDDDDD&nttId=3949&goMenuNo=1232100" target="_blank"></a>
+<a class="link-area" data-left="25.96" data-top="8.07" data-width="48.14" data-height="5.55" href="https://compa.re.kr/cop/bbs/rnw/selectBoardArticle.do;jsessionid=F1B349D10F2F60C694FF9D724A7F7025?bbsId=BBSMSTR_DDDDDDDDDDDD&nttId=3949&goMenuNo=1232100" target="_blank"></a>
 
-<a class="link-area" style="left:38.04%; top:39.10%; width:12.68%; height:1.59%;" href="https://blog.naver.com/texcorps/224319767246" target="_blank"></a>
-<a class="link-area" style="left:58.23%; top:39.10%; width:12.73%; height:1.59%;" href="https://blog.naver.com/texcorps/224319762966" target="_blank"></a>
+<a class="link-area" data-left="38.04" data-top="39.10" data-width="12.68" data-height="1.59" href="https://blog.naver.com/texcorps/224319767246" target="_blank"></a>
+<a class="link-area" data-left="58.23" data-top="39.10" data-width="12.73" data-height="1.59" href="https://blog.naver.com/texcorps/224319762966" target="_blank"></a>
 
-<a class="link-area" style="left:36.30%; top:42.76%; width:37.89%; height:1.63%;" href="https://www.edaily.co.kr/News/Read?newsId=03106166645478768&mediaCodeNo=257&OutLnkChk=Y" target="_blank"></a>
-<a class="link-area" style="left:36.30%; top:44.81%; width:37.89%; height:1.63%;" href="https://www.hellodd.com/news/articleView.html?idxno=112051" target="_blank"></a>
-<a class="link-area" style="left:36.30%; top:47.50%; width:37.89%; height:1.64%;" href="https://www.mt.co.kr/future/2026/05/18/2026051808091689437" target="_blank"></a>
-<a class="link-area" style="left:36.30%; top:48.93%; width:37.89%; height:1.63%;" href="https://kr.aving.net/news/articleView.html?idxno=1811345" target="_blank"></a>
-<a class="link-area" style="left:36.30%; top:50.98%; width:37.89%; height:1.63%;" href="https://www.sedaily.com/article/20046712?ref=naver" target="_blank"></a>
-<a class="link-area" style="left:36.30%; top:53.03%; width:37.89%; height:1.64%;" href="https://www.mt.co.kr/industry/2026/06/11/2026061112541167113" target="_blank"></a>
+<a class="link-area" data-left="36.30" data-top="42.76" data-width="37.89" data-height="1.63" href="https://www.edaily.co.kr/News/Read?newsId=03106166645478768&mediaCodeNo=257&OutLnkChk=Y" target="_blank"></a>
+<a class="link-area" data-left="36.30" data-top="44.81" data-width="37.89" data-height="1.63" href="https://www.hellodd.com/news/articleView.html?idxno=112051" target="_blank"></a>
+<a class="link-area" data-left="36.30" data-top="47.50" data-width="37.89" data-height="1.64" href="https://www.mt.co.kr/future/2026/05/18/2026051808091689437" target="_blank"></a>
+<a class="link-area" data-left="36.30" data-top="48.93" data-width="37.89" data-height="1.63" href="https://kr.aving.net/news/articleView.html?idxno=1811345" target="_blank"></a>
+<a class="link-area" data-left="36.30" data-top="50.98" data-width="37.89" data-height="1.63" href="https://www.sedaily.com/article/20046712?ref=naver" target="_blank"></a>
+<a class="link-area" data-left="36.30" data-top="53.03" data-width="37.89" data-height="1.64" href="https://www.mt.co.kr/industry/2026/06/11/2026061112541167113" target="_blank"></a>
 
-<a class="link-area" style="left:30.58%; top:60.16%; width:43.71%; height:1.09%;" href="https://www.jobkorea.co.kr/recruit/co_read/recruit/c/28489939" target="_blank"></a>
-<a class="link-area" style="left:30.58%; top:61.72%; width:43.71%; height:1.07%;" href="https://soslabcareer.ninehire.site/careers" target="_blank"></a>
-<a class="link-area" style="left:30.58%; top:63.27%; width:43.71%; height:1.09%;" href="https://www.saramin.co.kr/zf_user/company-info/view-inner-recruit?csn=L05uTDkyZ3ljcUpkM3pQc2g2UHVsdz09" target="_blank"></a>
-<a class="link-area" style="left:30.58%; top:64.81%; width:43.71%; height:1.09%;" href="https://team-mono.com/ko/careers/" target="_blank"></a>
-<a class="link-area" style="left:30.58%; top:66.37%; width:43.71%; height:1.09%;" href="https://careers.classum.com/apply" target="_blank"></a>
-<a class="link-area" style="left:30.58%; top:67.91%; width:43.71%; height:1.09%;" href="https://www.jobkorea.co.kr/Recruit/Co_Read/Recruit/C/24210302" target="_blank"></a>
-<a class="link-area" style="left:30.58%; top:69.44%; width:43.71%; height:1.11%;" href="https://www.jobkorea.co.kr/company/44400887/recruit" target="_blank"></a>
-<a class="link-area" style="left:30.58%; top:70.99%; width:43.71%; height:1.09%;" href="https://www.jobkorea.co.kr/recruit/co_read/recruit/c/27811453" target="_blank"></a>
+<a class="link-area" data-left="30.58" data-top="60.16" data-width="43.71" data-height="1.09" href="https://www.jobkorea.co.kr/recruit/co_read/recruit/c/28489939" target="_blank"></a>
+<a class="link-area" data-left="30.58" data-top="61.72" data-width="43.71" data-height="1.07" href="https://soslabcareer.ninehire.site/careers" target="_blank"></a>
+<a class="link-area" data-left="30.58" data-top="63.27" data-width="43.71" data-height="1.09" href="https://www.saramin.co.kr/zf_user/company-info/view-inner-recruit?csn=L05uTDkyZ3ljcUpkM3pQc2g2UHVsdz09" target="_blank"></a>
+<a class="link-area" data-left="30.58" data-top="64.81" data-width="43.71" data-height="1.09" href="https://team-mono.com/ko/careers/" target="_blank"></a>
+<a class="link-area" data-left="30.58" data-top="66.37" data-width="43.71" data-height="1.09" href="https://careers.classum.com/apply" target="_blank"></a>
+<a class="link-area" data-left="30.58" data-top="67.91" data-width="43.71" data-height="1.09" href="https://www.jobkorea.co.kr/Recruit/Co_Read/Recruit/C/24210302" target="_blank"></a>
+<a class="link-area" data-left="30.58" data-top="69.44" data-width="43.71" data-height="1.11" href="https://www.jobkorea.co.kr/company/44400887/recruit" target="_blank"></a>
+<a class="link-area" data-left="30.58" data-top="70.99" data-width="43.71" data-height="1.09" href="https://www.jobkorea.co.kr/recruit/co_read/recruit/c/27811453" target="_blank"></a>
 
-<a class="link-area" style="left:30.58%; top:73.64%; width:43.71%; height:1.12%;" href="https://compa.re.kr/cop/bbs/rnw/selectBoardArticle.do;jsessionid=F1B349D10F2F60C694FF9D724A7F7025?bbsId=BBSMSTR_DDDDDDDDDDDD&nttId=3949&goMenuNo=1232100" target="_blank"></a>
-<a class="link-area" style="left:30.58%; top:75.30%; width:43.71%; height:1.12%;" href="https://www.nnfc.re.kr/bbs/BBSMSTR_000000000002/B000000006016Zl2vB2.do" target="_blank"></a>
-<a class="link-area" style="left:30.58%; top:76.94%; width:43.71%; height:1.12%;" href="https://www.iris.go.kr/contents/retrieveBsnsAncmView.do?ancmId=021934&ancmPrg=ancmPre" target="_blank"></a>
-<a class="link-area" style="left:30.58%; top:78.55%; width:43.71%; height:1.12%;" href="https://www.iris.go.kr/contents/retrieveBsnsAncmView.do?ancmId=021616&ancmPrg=ancmIng" target="_blank"></a>
-<a class="link-area" style="left:30.58%; top:80.20%; width:43.71%; height:1.12%;" href="https://www.kiria.org/portal/info/portalInfoBusinessWrite.do;jsessionid=ABE8658D0DBCF67BF78B1B5AB2B2D60B" target="_blank"></a>
-<a class="link-area" style="left:30.58%; top:81.81%; width:43.71%; height:1.12%;" href="https://www.sba.seoul.kr/Pages/BusinessApply/PostingDetail.aspx?mid=a179ecf6-5e65-f111-b404-d4f5ef4a1e33" target="_blank"></a>
-<a class="link-area" style="left:30.58%; top:83.40%; width:43.71%; height:1.14%;" href="https://www.innopolis.or.kr/board/view?menuId=MENU00319&pageNum=1&rowCnt=8&no1=489&linkId=52532" target="_blank"></a>
+<a class="link-area" data-left="30.58" data-top="73.64" data-width="43.71" data-height="1.12" href="https://compa.re.kr/cop/bbs/rnw/selectBoardArticle.do;jsessionid=F1B349D10F2F60C694FF9D724A7F7025?bbsId=BBSMSTR_DDDDDDDDDDDD&nttId=3949&goMenuNo=1232100" target="_blank"></a>
+<a class="link-area" data-left="30.58" data-top="75.30" data-width="43.71" data-height="1.12" href="https://www.nnfc.re.kr/bbs/BBSMSTR_000000000002/B000000006016Zl2vB2.do" target="_blank"></a>
+<a class="link-area" data-left="30.58" data-top="76.94" data-width="43.71" data-height="1.12" href="https://www.iris.go.kr/contents/retrieveBsnsAncmView.do?ancmId=021934&ancmPrg=ancmPre" target="_blank"></a>
+<a class="link-area" data-left="30.58" data-top="78.55" data-width="43.71" data-height="1.12" href="https://www.iris.go.kr/contents/retrieveBsnsAncmView.do?ancmId=021616&ancmPrg=ancmIng" target="_blank"></a>
+<a class="link-area" data-left="30.58" data-top="80.20" data-width="43.71" data-height="1.12" href="https://www.kiria.org/portal/info/portalInfoBusinessWrite.do;jsessionid=ABE8658D0DBCF67BF78B1B5AB2B2D60B" target="_blank"></a>
+<a class="link-area" data-left="30.58" data-top="81.81" data-width="43.71" data-height="1.12" href="https://www.sba.seoul.kr/Pages/BusinessApply/PostingDetail.aspx?mid=a179ecf6-5e65-f111-b404-d4f5ef4a1e33" target="_blank"></a>
+<a class="link-area" data-left="30.58" data-top="83.40" data-width="43.71" data-height="1.14" href="https://www.innopolis.or.kr/board/view?menuId=MENU00319&pageNum=1&rowCnt=8&no1=489&linkId=52532" target="_blank"></a>
 
-<a class="link-area" style="left:48.88%; top:87.83%; width:12.03%; height:1.61%;" href="https://docs.google.com/forms/d/e/1FAIpQLSdRnAt2cbrHCMZmQoMPbjDOcSz-B6cBw2VCnwQ8FlOHMZmtmQ/viewform" target="_blank"></a>
+<a class="link-area" data-left="48.88" data-top="87.83" data-width="12.03" data-height="1.61" href="https://docs.google.com/forms/d/e/1FAIpQLSdRnAt2cbrHCMZmQoMPbjDOcSz-B6cBw2VCnwQ8FlOHMZmtmQ/viewform" target="_blank"></a>
 
-<a class="link-area" style="left:27.75%; top:91.26%; width:21.98%; height:2.38%;" href="https://www.compa.re.kr/cmm/rnw/main/mainPage.do" target="_blank"></a>
-<a class="link-area" style="left:50.87%; top:91.26%; width:22.03%; height:2.38%;" href="https://docs.google.com/forms/d/e/1FAIpQLScAcJN2DJX9pIsy7vGj6ojufuE53O_m8nA19nUp5QqANSuTcg/viewform" target="_blank"></a>
-<a class="link-area" style="left:73.94%; top:91.26%; width:22.03%; height:2.38%;" href="https://texcorps.stibee.com/" target="_blank"></a>
+<a class="link-area" data-left="27.75" data-top="91.26" data-width="21.98" data-height="2.38" href="https://www.compa.re.kr/cmm/rnw/main/mainPage.do" target="_blank"></a>
+<a class="link-area" data-left="50.87" data-top="91.26" data-width="22.03" data-height="2.38" href="https://docs.google.com/forms/d/e/1FAIpQLScAcJN2DJX9pIsy7vGj6ojufuE53O_m8nA19nUp5QqANSuTcg/viewform" target="_blank"></a>
+<a class="link-area" data-left="73.94" data-top="91.26" data-width="22.03" data-height="2.38" href="https://texcorps.stibee.com/" target="_blank"></a>
+
 </div>
+
+<script>
+function positionLinks(){
+    const img = document.getElementById("newsletterImg");
+    const links = document.querySelectorAll(".link-area");
+
+    const imgWidth = img.clientWidth;
+    const imgHeight = img.clientHeight;
+
+    links.forEach(link => {
+        const left = parseFloat(link.dataset.left);
+        const top = parseFloat(link.dataset.top);
+        const width = parseFloat(link.dataset.width);
+        const height = parseFloat(link.dataset.height);
+
+        link.style.left = (imgWidth * left / 100) + "px";
+        link.style.top = (imgHeight * top / 100) + "px";
+        link.style.width = (imgWidth * width / 100) + "px";
+        link.style.height = (imgHeight * height / 100) + "px";
+    });
+}
+
+window.addEventListener("load", positionLinks);
+window.addEventListener("resize", positionLinks);
+
+const img = document.getElementById("newsletterImg");
+img.addEventListener("load", positionLinks);
+</script>
 
 </body>
 </html>
