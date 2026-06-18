@@ -2,32 +2,25 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>TeX-Corps Insight</title>
 
 <style>
-*{
+body{
     margin:0;
     padding:0;
-    box-sizing:border-box;
-}
-
-html,
-body{
-    background:#ffffff;
+    background:#fff;
+    text-align:center;
 }
 
 .newsletter-wrap{
-    width:587px;
-    max-width:100%;
+    max-width:587px;
     margin:0 auto;
 }
 
-#newsletter{
-    display:block;
+.newsletter-wrap img{
     width:100%;
     height:auto;
+    display:block;
     border:0;
 }
 </style>
@@ -36,12 +29,62 @@ body{
 <body>
 
 <div class="newsletter-wrap">
-    <img
-        id="newsletter"
-        src="img3.png"
-        alt="TeX-Corps Insight"
-    >
+
+<img
+    id="newsletter"
+    src="https://texcoprsnewsletter.github.io/Tex-Corps-newsletter/vol3/img3.png"
+    usemap="#newsletter-map"
+    width="587"
+    alt="TeX-Corps Insight"
+>
+
+<map name="newsletter-map">
+  <area shape="rect" coords="0,196,587,331" href="https://compa.re.kr/cop/bbs/rnw/selectBoardArticle.do?bbsId=BBSMSTR_DDDDDDDDDDDD&nttId=3949&goMenuNo=1232000" target="_blank">
+  <area shape="rect" coords="99,920,220,958" href="https://blog.naver.com/texcorps/224305643263" target="_blank">
+  <area shape="rect" coords="366,920,487,958" href="https://blog.naver.com/texcorps/224305777861" target="_blank">
+  <area shape="rect" coords="87,1009,574,1048" href="https://www.soslab.co/board/board.php?bo_table=press&idx=37" target="_blank">
+  <area shape="rect" coords="87,1055,574,1095" href="https://kisguard.imweb.me/59" target="_blank">
+  <area shape="rect" coords="87,1102,574,1141" href="https://aldaver.co.kr/bbs/board.php?bo_table=sub5_1&wr_id=60" target="_blank">
+  <area shape="rect" coords="87,1148,574,1188" href="https://www.mt.co.kr/future/2026/04/27/2026041411294576405" target="_blank">
+  <area shape="rect" coords="87,1195,574,1234" href="https://www.mt.co.kr/future/2026/05/12/2026051208410944772" target="_blank">
+  <area shape="rect" coords="87,1241,574,1281" href="https://www.rs101.co.kr/boards/32/view?referer=%2Fpages%2Fnews" target="_blank">
+  <area shape="rect" coords="40,1427,552,1457" href="https://compa.re.kr/cop/bbs/rnw/selectBoardArticle.do?bbsId=BBSMSTR_DDDDDDDDDDDD&nttId=3949&goMenuNo=1232000" target="_blank">
+  <area shape="rect" coords="40,1460,552,1489" href="https://www.nnfc.re.kr/bbs/BBSMSTR_000000000002/B000000006016Zl2vB2.do" target="_blank">
+  <area shape="rect" coords="40,1493,552,1520" href="https://www.iris.go.kr/contents/retrieveBsnsAncmView.do?ancmId=021934&ancmPrg=ancmPre" target="_blank">
+  <area shape="rect" coords="40,1525,552,1553" href="https://www.nrf.re.kr/biz/notice/view?ac=view&postNo=272832" target="_blank">
+  <area shape="rect" coords="40,1557,552,1586" href="https://www.toprnd.or.kr/sub5/gongji_view.asp?smenu=sub5&stitle=subtitle5_4&idx=53" target="_blank">
+  <area shape="rect" coords="235,1725,352,1766" href="https://docs.google.com/forms/d/e/1FAIpQLSdRnAt2cbrHCMZmQoMPbjDOcSz-B6cBw2VCnwQ8FlOHMZmtmQ/viewform" target="_blank">
+  <area shape="rect" coords="14,1793,196,1856" href="https://www.compa.re.kr/cmm/rnw/main/mainPage.do" target="_blank">
+  <area shape="rect" coords="204,1793,386,1856" href="https://docs.google.com/forms/d/e/1FAIpQLScAcJN2DJX9pIsy7vGj6ojufuE53O_m8nA19nUp5QqANSuTcg/viewform" target="_blank">
+  <area shape="rect" coords="394,1793,574,1856" href="https://texcorps.stibee.com/" target="_blank">
+</map>
+
 </div>
+
+<script>
+const img = document.getElementById('newsletter');
+const areas = document.querySelectorAll('area');
+const originalWidth = 587;
+
+areas.forEach(area => {
+    area.dataset.coords = area.coords;
+});
+
+function resizeMap(){
+    const ratio = img.clientWidth / originalWidth;
+
+    areas.forEach(area => {
+        const original = area.dataset.coords.split(',').map(Number);
+        const scaled = original.map(v => Math.round(v * ratio));
+        area.coords = scaled.join(',');
+    });
+}
+
+window.addEventListener('load', resizeMap);
+window.addEventListener('resize', resizeMap);
+window.addEventListener('orientationchange', resizeMap);
+img.addEventListener('load', resizeMap);
+</script>
 
 </body>
 </html>
