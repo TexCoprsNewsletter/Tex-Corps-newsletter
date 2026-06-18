@@ -31,6 +31,25 @@ body{
     display:block;
     z-index:10;
 }
+
+/* 처음 화면: 이미지 전체 클릭 */
+.preview-mode #newsletter{
+    cursor:pointer;
+}
+
+/* 처음 화면에서는 개별 링크 비활성화 */
+.preview-mode .link-area{
+    pointer-events:none;
+}
+
+/* 새창에서는 개별 링크 활성화 */
+.full-mode #newsletter{
+    cursor:default;
+}
+
+.full-mode .link-area{
+    pointer-events:auto;
+}
 </style>
 </head>
 
@@ -39,6 +58,7 @@ body{
 <div class="newsletter-wrap">
 
 <img
+    id="newsletter"
     src="https://texcoprsnewsletter.github.io/Tex-Corps-newsletter/vol3/img3.png"
     alt="TeX-Corps Insight"
 >
@@ -80,6 +100,22 @@ body{
 <a class="link-area" style="left:67.12%; top:96.61%; width:30.66%; height:3.39%;" href="https://texcorps.stibee.com/" target="_blank"></a>
 
 </div>
+
+<script>
+const isFullView =
+    new URLSearchParams(window.location.search).get('full') === '1';
+
+document.body.classList.add(isFullView ? 'full-mode' : 'preview-mode');
+
+if(!isFullView){
+    document.getElementById('newsletter').addEventListener('click', function(){
+        window.open(
+            window.location.pathname + '?full=1',
+            '_blank'
+        );
+    });
+}
+</script>
 
 </body>
 </html>
