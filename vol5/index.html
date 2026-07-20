@@ -5,14 +5,47 @@
 <title>TeX-Corps Insight</title>
 
 <style>
-body{margin:0;padding:0;background:#fff;text-align:center;}
-.newsletter-wrap{position:relative;width:100%;max-width:587px;margin:0 auto;}
-.newsletter-wrap img{width:100%;height:auto;display:block;border:0;}
-.link-area{position:absolute;display:block;z-index:10;box-sizing:border-box;}
+html, body {
+    margin: 0;
+    padding: 0;
+    background: #fff;
+}
 
-/* 좌표 확인용 */
+body {
+    text-align: center;
+}
+
+.newsletter-wrap {
+    position: relative;
+    width: 100%;
+    max-width: 587px;
+    margin: 0 auto;
+    line-height: 0;
+}
+
+.newsletter-wrap img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 0;
+}
+
+.link-area {
+    position: absolute;
+    display: block;
+    z-index: 10;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+/* ==================================================
+   링크 영역 확인이 필요할 때 아래 주석 해제
+   ================================================== */
 /*
-.link-area{background:rgba(255,0,0,0.25);border:1px solid red;}
+.link-area {
+    background: rgba(255, 0, 0, 0.25);
+    border: 1px solid red;
+}
 */
 </style>
 </head>
@@ -21,63 +54,391 @@ body{margin:0;padding:0;background:#fff;text-align:center;}
 
 <div class="newsletter-wrap">
 
-<img id="newsletterImg" src="https://texcoprsnewsletter.github.io/Tex-Corps-newsletter/vol5/img5.png" alt="TeX-Corps Insight">
+<img
+    id="newsletterImg"
+    src="https://texcoprsnewsletter.github.io/Tex-Corps-newsletter/vol5/img5.png"
+    alt="TeX-Corps Insight"
+>
 
-<a class="link-area" data-left="0.00" data-top="7.91" data-width="99.59" data-height="5.76" href="https://compa.re.kr/cop/bbs/rnw/selectBoardArticle.do;jsessionid=F1B349D10F2F60C694FF9D724A7F7025?bbsId=BBSMSTR_DDDDDDDDDDDD&nttId=3949&goMenuNo=1232100" target="_blank"></a>
-
-<a class="link-area" data-left="15.40" data-top="38.28" data-width="21.56" data-height="1.71" href="https://blog.naver.com/texcorps/224349485077" target="_blank"></a>
-
-<a class="link-area" data-left="61.19" data-top="38.28" data-width="21.15" data-height="1.81" href="https://blog.naver.com/texcorps/224349711031" target="_blank"></a>
-
-<a class="link-area" data-left="88.71" data-top="42.09" data-width="5.34" data-height="1.27" href="https://www.etnews.com/20260706000167" target="_blank"></a>
-<a class="link-area" data-left="89.12" data-top="44.19" data-width="5.34" data-height="0.93" href="https://www.dt.co.kr/article/12073063?ref=naver" target="_blank"></a>
-<a class="link-area" data-left="89.53" data-top="45.95" data-width="4.93" data-height="1.27" href="https://www.rapportian.com/news/articleView.html?idxno=238211" target="_blank"></a>
-<a class="link-area" data-left="89.94" data-top="47.90" data-width="4.11" data-height="1.12" href="https://www.medicopharma.co.kr/news/articleView.html?idxno=68746" target="_blank"></a>
-<a class="link-area" data-left="89.94" data-top="49.90" data-width="4.11" data-height="1.17" href="https://zdnet.co.kr/view/?no=20260620134952" target="_blank"></a>
-<a class="link-area" data-left="89.73" data-top="51.86" data-width="4.11" data-height="1.07" href="https://www.gokorea.kr/news/articleView.html?idxno=871940" target="_blank"></a>
-
-<a class="link-area" data-left="6.78" data-top="58.59" data-width="64.80" data-height="0.82" href="https://www.saramin.co.kr/zf_user/company-info/view-inner-recruit/csn/dXJUdkZWMm1IYnZ1ejFleWQxbkpSQT09/company_nm/(%EC%A3%BC)%EB%9F%AD%EC%8A%A4%EB%A1%9C%EB%B3%B4" target="_blank"></a>
-<a class="link-area" data-left="8.62" data-top="59.96" data-width="53.59" data-height="0.98" href="https://www.mv-w.com/careers" target="_blank"></a>
-<a class="link-area" data-left="6.78" data-top="61.33" data-width="54.21" data-height="0.78" href="https://www.saramin.co.kr/zf_user/company-info/view-inner-recruit/csn/NlAvVENpZzBYNC9DMDNoRkFaNWwydz09/company_nm/(%EC%A3%BC)%EB%A6%AC%ED%94%8C%EB%9D%BC" target="_blank"></a>
-<a class="link-area" data-left="6.78" data-top="62.51" data-width="58.70" data-height="0.82" href="https://www.saramin.co.kr/zf_user/company-info/view-inner-recruit/csn/dlU3ejBxQ3ZPQ0JwOHp1ZTdTejN6dz09/company_nm/(%EC%A3%BC)%ED%8F%B4%EB%9D%BC%EB%A6%AC%EC%8A%A4%EC%93%B0%EB%A6%AC%EB%94%94?srsltid=AfmBOoqAGprF9HF0GIP6IOl_9GSWJaaSdb3HSXs2wwXIkhWzbCkNQILF" target="_blank"></a>
-<a class="link-area" data-left="6.78" data-top="63.87" data-width="50.31" data-height="0.73" href="https://www.saramin.co.kr/zf_user/company-info/view-inner-recruit/csn/ZStObHZxWnhOa1R1NXgyendYQmw2dz09/company_nm/%EC%85%80%EB%A0%88%ED%8A%B8%EB%A6%BD" target="_blank"></a>
+<!-- ==================================================
+     1. 상단 메인 배너
+     2026 사업화멘토링플랫폼 지원기업 모집
+     ================================================== -->
+<a
+    class="link-area"
+    data-left="1.50"
+    data-top="10.55"
+    data-width="97.00"
+    data-height="5.45"
+    href="https://compa.re.kr/cop/bbs/rnw/selectBoardArticle.do;jsessionid=F1B349D10F2F60C694FF9D724A7F7025?bbsId=BBSMSTR_DDDDDDDDDDDD&nttId=3949&goMenuNo=1232100"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="2026 사업화멘토링플랫폼 지원기업 모집 바로가기">
+</a>
 
 
-<a class="link-area" data-left="6.78" data-top="71.53" data-width="49.49" data-height="0.73" href="https://compa.re.kr/cop/bbs/rnw/selectBoardArticle.do;jsessionid=F1B349D10F2F60C694FF9D724A7F7025?bbsId=BBSMSTR_DDDDDDDDDDDD&nttId=3949&goMenuNo=1232100" target="_blank"></a>
-<a class="link-area" data-left="8.42" data-top="72.85" data-width="82.75" data-height="0.68" href="https://www.compa.re.kr/cop/bbs/rnw/selectBoardArticle.do?bbsId=BBSMSTR_DDDDDDDDDDDD&goMenuNo=1232100&nttId=4026&pageIndex=1" target="_blank"></a>
-<a class="link-area" data-left="8.42" data-top="74.12" data-width="72.48" data-height="0.68" href="https://www.bizinfo.go.kr/sii/siia/selectSIIA200Detail.do?hashCode=&rowsSel=6&rows=15&cpage=1&cat=&schPblancDiv=&schJrsdCodeTy=2&schWntyAt=&schAreaDetailCodes=&schEndAt=N&orderGb=&sort=&preKeywords=&condition=searchPblancNm&condition1=AND&keyword=&pblancId=PBLN_000000000124421" target="_blank"></a>
-<a class="link-area" data-left="6.78" data-top="75.31" data-width="72.90" data-height="0.92" href="https://www.bizinfo.go.kr/sii/siia/selectSIIA200Detail.do?hashCode=&rowsSel=6&rows=15&cpage=1&cat=&schPblancDiv=&schJrsdCodeTy=2&schWntyAt=&schAreaDetailCodes=&schEndAt=N&orderGb=&sort=&preKeywords=&condition=searchPblancNm&condition1=AND&keyword=&pblancId=PBLN_000000000124420" target="_blank"></a>
-<a class="link-area" data-left="6.57" data-top="76.58" data-width="74.10" data-height="0.92" href="https://www.iris.go.kr/contents/retrieveBsnsAncmView.do?ancmId=022717&ancmPrg=#:~:text=2026%EB%85%84%EB%8F%84%203%EC%B0%A8%20%EA%B5%AD%EB%AF%BC%EC%83%9D%ED%99%9C%EC%95%88%EC%A0%84%20%EA%B8%B4%EA%B8%89%EB%8C%80%EC%9D%91%EC%97%B0%EA%B5%AC(2%EB%8B%A8%EA%B3%84).%20%EA%B8%B0%EC%88%A0%EA%B0%9C%EB%B0%9C%20%EB%B0%8F%20%EC%8B%A4%EC%A6%9D,%EB%B6%80%EC%B4%9D%EB%A6%AC%EA%B2%B8%20%EA%B3%BC%ED%95%99%EA%B8%B0%EC%88%A0%EC%A0%95%EB%B3%B4%ED%86%B5%EC%8B%A0%EB%B6%80%20%EC%9E%A5%20%EA%B4%80%20%EB%B0%B0%20%EA%B2%BD%20%ED%9B%88." target="_blank"></a>
-<a class="link-area" data-left="6.57" data-top="77.84" data-width="74.80" data-height="0.92" href="https://www.nipa.kr/home/bsnsAll/3/nttDetail?bbsNo=4&nttNo=16852" target="_blank"></a>
-<a class="link-area" data-left="6.98" data-top="79.05" data-width="57.91" data-height="0.78" href="https://www.nrf.re.kr/biz/notice/view?ac=view&searchType=&searchText=&pageNum=1&postNo=277582&menuNo=362&bizNo=663&searchBizNo=0&bizNotGubn=guide&bizCompleteNm=&orderType=REG_DTTM&orderTypeBiz=BIZ_DYSC_END_DATE_ORDER&orderTypeAt=DESC&orderTypeBizAt=DESC&myBizCheckYn=&bizChgMbrNo=&myDeptBizCheckYn=&bizChgMbrPostNm=&bizSelectSearchRegDttm=&regStartDttm=&regEndDttm=&searchRegChoiceDttm=M&bizSearchRegDttmAllYn=N&searchRegYearDttm=2026&searchRegStartMonthDttm=07&searchRegEndMonthDttm=07&searchSplitBizNo=&keyword=&resultKeyword=" target="_blank"></a>
+<!-- ==================================================
+     2. 동문 이야기 - 왼쪽
+     TIN 공식 출범
+     바로가기 버튼 전체
+     ================================================== -->
+<a
+    class="link-area"
+    data-left="17.15"
+    data-top="38.14"
+    data-width="20.20"
+    data-height="1.70"
+    href="https://blog.naver.com/texcorps/224349485077"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="TIN 공식 출범 동문 이야기 바로가기">
+</a>
 
-<a class="link-area" data-left="39.01" data-top="85.60" data-width="20.74" data-height="1.71" href="https://docs.google.com/forms/d/1yKPAf-YRYxDkqZ-yLBw4kLUMpO0Gq13xcookKsLdQ30/viewform?pli=1&pli=1&edit_requested=true" target="_blank"></a>
 
-<a class="link-area" data-left="1.64" data-top="88.57" data-width="31.42" data-height="2.83" href="https://www.compa.re.kr/cmm/rnw/main/mainPage.do;jsessionid=F5F7207269A133707BB88C96B6D43ECA" target="_blank"></a>
-<a class="link-area" data-left="33.68" data-top="88.67" data-width="31.83" data-height="2.73" href="https://docs.google.com/forms/d/e/1FAIpQLScAcJN2DJX9pIsy7vGj6ojufuE53O_m8nA19nUp5QqANSuTcg/viewform?usp=header" target="_blank"></a>
-<a class="link-area" data-left="66.32" data-top="88.57" data-width="31.62" data-height="2.88" href="https://texcorps.stibee.com/" target="_blank"></a>
+<!-- ==================================================
+     3. 동문 이야기 - 오른쪽
+     나라미 권기정 대표
+     바로가기 버튼 전체
+     ================================================== -->
+<a
+    class="link-area"
+    data-left="62.55"
+    data-top="38.14"
+    data-width="20.30"
+    data-height="1.70"
+    href="https://blog.naver.com/texcorps/224349711031"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="나라미 권기정 대표 동문 이야기 바로가기">
+</a>
+
+
+<!-- ==================================================
+     4. 동문 정보 공유
+     문구 전체 + 오른쪽 화살표까지 클릭 가능
+     ================================================== -->
+
+<!-- 4-1 -->
+<a class="link-area"
+   data-left="88.71" data-top="42.09"
+   data-width="5.34" data-height="1.27"
+   href="https://www.etnews.com/20260706000167"
+   target="_blank" rel="noopener noreferrer"></a>
+
+<!-- 4-2 -->
+<a class="link-area"
+   data-left="89.12" data-top="44.19"
+   data-width="5.34" data-height="0.93"
+   href="https://www.dt.co.kr/article/12073063?ref=naver"
+   target="_blank" rel="noopener noreferrer"></a>
+
+<!-- 4-3 -->
+<a class="link-area"
+   data-left="89.53" data-top="45.95"
+   data-width="4.93" data-height="1.27"
+   href="https://www.rapportian.com/news/articleView.html?idxno=238211"
+   target="_blank" rel="noopener noreferrer"></a>
+
+<!-- 4-4 -->
+<a class="link-area"
+   data-left="89.94" data-top="47.90"
+   data-width="4.11" data-height="1.12"
+   href="https://www.medicopharma.co.kr/news/articleView.html?idxno=68746"
+   target="_blank" rel="noopener noreferrer"></a>
+
+<!-- 4-5 -->
+<a class="link-area"
+   data-left="89.94" data-top="49.90"
+   data-width="4.11" data-height="1.17"
+   href="https://zdnet.co.kr/view/?no=20260620134952"
+   target="_blank" rel="noopener noreferrer"></a>
+
+<!-- 4-6 -->
+<a class="link-area"
+   data-left="89.73" data-top="51.86"
+   data-width="4.11" data-height="1.07"
+   href="https://www.gokorea.kr/news/articleView.html?idxno=871940"
+   target="_blank" rel="noopener noreferrer"></a>
+
+
+<!-- ==================================================
+     5. 텍스코어 원티드 / 채용공고
+     각 문구 실제 길이 중심
+     ================================================== -->
+
+<!-- 럭스로보 -->
+<a
+    class="link-area"
+    data-left="7.30"
+    data-top="58.44"
+    data-width="65.80"
+    data-height="1.15"
+    href="https://www.saramin.co.kr/zf_user/company-info/view-inner-recruit/csn/dXJUdkZWMm1IYnZ1ejFleWQxbkpSQT09/company_nm/(%EC%A3%BC)%EB%9F%AD%EC%8A%A4%EB%A1%9C%EB%B3%B4"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="럭스로보 채용공고 바로가기">
+</a>
+
+<!-- 모바일 연구개발 -->
+<a
+    class="link-area"
+    data-left="7.30"
+    data-top="59.77"
+    data-width="57.50"
+    data-height="1.15"
+    href="https://www.mv-w.com/careers"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="모바일 연구개발 채용공고 바로가기">
+</a>
+
+<!-- 리플라 -->
+<a
+    class="link-area"
+    data-left="7.30"
+    data-top="61.11"
+    data-width="60.50"
+    data-height="1.15"
+    href="https://www.saramin.co.kr/zf_user/company-info/view-inner-recruit/csn/NlAvVENpZzBYNC9DMDNoRkFaNWwydz09/company_nm/(%EC%A3%BC)%EB%A6%AC%ED%94%8C%EB%9D%BC"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="리플라 채용공고 바로가기">
+</a>
+
+<!-- 폴라리스쓰리디 -->
+<a
+    class="link-area"
+    data-left="7.30"
+    data-top="62.44"
+    data-width="62.30"
+    data-height="1.15"
+    href="https://www.saramin.co.kr/zf_user/company-info/view-inner-recruit/csn/dlU3ejBxQ3ZPQ0JwOHp1ZTdTejN6dz09/company_nm/(%EC%A3%BC)%ED%8F%B4%EB%9D%BC%EB%A6%AC%EC%8A%A4%EC%93%B0%EB%A6%AC%EB%94%94?srsltid=AfmBOoqAGprF9HF0GIP6IOl_9GSWJaaSdb3HSXs2wwXIkhWzbCkNQILF"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="폴라리스쓰리디 채용공고 바로가기">
+</a>
+
+<!-- 셀레트립 -->
+<a
+    class="link-area"
+    data-left="7.30"
+    data-top="63.77"
+    data-width="53.30"
+    data-height="1.15"
+    href="https://www.saramin.co.kr/zf_user/company-info/view-inner-recruit/csn/ZStObHZxWnhOa1R1NXgyendYQmw2dz09/company_nm/%EC%85%80%EB%A0%88%ED%8A%B8%EB%A6%BD"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="셀레트립 채용공고 바로가기">
+</a>
+
+
+<!-- ==================================================
+     6. 이달의 Pick! 지원사업
+     각 지원사업 제목 전체 클릭
+     ================================================== -->
+
+<!-- 6-1 사업화멘토링플랫폼 -->
+<a
+    class="link-area"
+    data-left="7.20"
+    data-top="71.36"
+    data-width="54.50"
+    data-height="1.08"
+    href="https://compa.re.kr/cop/bbs/rnw/selectBoardArticle.do;jsessionid=F1B349D10F2F60C694FF9D724A7F7025?bbsId=BBSMSTR_DDDDDDDDDDDD&nttId=3949&goMenuNo=1232100"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="2026 사업화멘토링플랫폼 지원기업 모집">
+</a>
+
+<!-- 6-2 STAR-Academy -->
+<a
+    class="link-area"
+    data-left="7.20"
+    data-top="72.65"
+    data-width="85.20"
+    data-height="1.08"
+    href="https://www.compa.re.kr/cop/bbs/rnw/selectBoardArticle.do?bbsId=BBSMSTR_DDDDDDDDDDDD&goMenuNo=1232100&nttId=4026&pageIndex=1"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="2026 STAR Academy 과학기술실용화 경진대회 공고">
+</a>
+
+<!-- 6-3 글로벌 SaaS -->
+<a
+    class="link-area"
+    data-left="7.20"
+    data-top="73.94"
+    data-width="76.30"
+    data-height="1.08"
+    href="https://www.bizinfo.go.kr/sii/siia/selectSIIA200Detail.do?hashCode=&rowsSel=6&rows=15&cpage=1&cat=&schPblancDiv=&schJrsdCodeTy=2&schWntyAt=&schAreaDetailCodes=&schEndAt=N&orderGb=&sort=&preKeywords=&condition=searchPblancNm&condition1=AND&keyword=&pblancId=PBLN_000000000124421"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="2026 글로벌 SaaS 마켓플레이스 지원사업 모집 공고">
+</a>
+
+<!-- 6-4 BIO-Europe -->
+<a
+    class="link-area"
+    data-left="7.20"
+    data-top="75.22"
+    data-width="76.50"
+    data-height="1.08"
+    href="https://www.bizinfo.go.kr/sii/siia/selectSIIA200Detail.do?hashCode=&rowsSel=6&rows=15&cpage=1&cat=&schPblancDiv=&schJrsdCodeTy=2&schWntyAt=&schAreaDetailCodes=&schEndAt=N&orderGb=&sort=&preKeywords=&condition=searchPblancNm&condition1=AND&keyword=&pblancId=PBLN_000000000124420"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="2026 바이오유럽 BIO Europe 참가 지원사업 모집 공고">
+</a>
+
+<!-- 6-5 국민생활안전 긴급대응 -->
+<a
+    class="link-area"
+    data-left="7.20"
+    data-top="76.50"
+    data-width="85.80"
+    data-height="1.08"
+    href="https://www.iris.go.kr/contents/retrieveBsnsAncmView.do?ancmId=022717&ancmPrg=#:~:text=2026%EB%85%84%EB%8F%84%203%EC%B0%A8%20%EA%B5%AD%EB%AF%BC%EC%83%9D%ED%99%9C%EC%95%88%EC%A0%84%20%EA%B8%B4%EA%B8%89%EB%8C%80%EC%9D%91%EC%97%B0%EA%B5%AC(2%EB%8B%A8%EA%B3%84).%20%EA%B8%B0%EC%88%A0%EA%B0%9C%EB%B0%9C%20%EB%B0%8F%20%EC%8B%A4%EC%A6%9D,%EB%B6%80%EC%B4%9D%EB%A6%AC%EA%B2%B8%20%EA%B3%BC%ED%95%99%EA%B8%B0%EC%88%A0%EC%A0%95%EB%B3%B4%ED%86%B5%EC%8B%A0%EB%B6%80%20%EC%9E%A5%20%EA%B4%80%20%EB%B0%B0%20%EA%B2%BD%20%ED%9B%88."
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="국민생활안전 긴급대응 연구 신규과제 공모">
+</a>
+
+<!-- 6-6 AI 서비스 -->
+<a
+    class="link-area"
+    data-left="7.20"
+    data-top="77.78"
+    data-width="80.50"
+    data-height="1.08"
+    href="https://www.nipa.kr/home/bsnsAll/3/nttDetail?bbsNo=4&nttNo=16852"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="AI 서비스 비대면 활용 지원 사업 모집 공고">
+</a>
+
+<!-- 6-7 바이오 의료기술개발사업 -->
+<a
+    class="link-area"
+    data-left="7.20"
+    data-top="79.06"
+    data-width="67.50"
+    data-height="1.08"
+    href="https://www.nrf.re.kr/biz/notice/view?ac=view&searchType=&searchText=&pageNum=1&postNo=277582&menuNo=362&bizNo=663&searchBizNo=0&bizNotGubn=guide&bizCompleteNm=&orderType=REG_DTTM&orderTypeBiz=BIZ_DYSC_END_DATE_ORDER&orderTypeAt=DESC&orderTypeBizAt=DESC&myBizCheckYn=&bizChgMbrNo=&myDeptBizCheckYn=&bizChgMbrPostNm=&myDeptBizCheckYn=&bizChgMbrPostNm=&bizSelectSearchRegDttm=&regStartDttm=&regEndDttm=&searchRegChoiceDttm=M&bizSearchRegDttmAllYn=N&searchRegYearDttm=2026&searchRegStartMonthDttm=07&searchRegEndMonthDttm=07&searchSplitBizNo=&keyword=&resultKeyword="
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="2026 바이오 의료기술개발사업 첨단바이오 연구교류 프로그램 공고">
+</a>
+
+
+<!-- ==================================================
+     7. 오늘의 인사이트 - 의견 남기기
+     ================================================== -->
+<a
+    class="link-area"
+    data-left="39.15"
+    data-top="85.45"
+    data-width="21.70"
+    data-height="1.85"
+    href="https://docs.google.com/forms/d/1yKPAf-YRYxDkqZ-yLBw4kLUMpO0Gq13xcookKsLdQ30/viewform?pli=1&pli=1&edit_requested=true"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="오늘의 인사이트 의견 남기기">
+</a>
+
+
+<!-- ==================================================
+     8. 하단 3개 메뉴
+     버튼 전체 클릭
+     ================================================== -->
+
+<!-- 홈페이지 바로가기 -->
+<a
+    class="link-area"
+    data-left="0.90"
+    data-top="88.28"
+    data-width="32.40"
+    data-height="3.05"
+    href="https://www.compa.re.kr/cmm/rnw/main/mainPage.do;jsessionid=F5F7207269A133707BB88C96B6D43ECA"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="홈페이지 바로가기">
+</a>
+
+<!-- 문의하기 -->
+<a
+    class="link-area"
+    data-left="33.70"
+    data-top="88.28"
+    data-width="32.60"
+    data-height="3.05"
+    href="https://docs.google.com/forms/d/e/1FAIpQLScAcJN2DJX9pIsy7vGj6ojufuE53O_m8nA19nUp5QqANSuTcg/viewform?usp=header"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="문의하기">
+</a>
+
+<!-- 지난호 보기 -->
+<a
+    class="link-area"
+    data-left="66.70"
+    data-top="88.28"
+    data-width="32.40"
+    data-height="3.05"
+    href="https://texcorps.stibee.com/"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="지난호 보기">
+</a>
 
 </div>
 
+
 <script>
-function positionLinks(){
+function positionLinks() {
+
     const img = document.getElementById("newsletterImg");
     const links = document.querySelectorAll(".link-area");
+
+    if (!img || !img.clientWidth || !img.clientHeight) {
+        return;
+    }
 
     const imgWidth = img.clientWidth;
     const imgHeight = img.clientHeight;
 
-    links.forEach(link => {
-        link.style.left = (imgWidth * parseFloat(link.dataset.left) / 100) + "px";
-        link.style.top = (imgHeight * parseFloat(link.dataset.top) / 100) + "px";
-        link.style.width = (imgWidth * parseFloat(link.dataset.width) / 100) + "px";
-        link.style.height = (imgHeight * parseFloat(link.dataset.height) / 100) + "px";
+    links.forEach(function(link) {
+
+        const left = parseFloat(link.dataset.left);
+        const top = parseFloat(link.dataset.top);
+        const width = parseFloat(link.dataset.width);
+        const height = parseFloat(link.dataset.height);
+
+        link.style.left = (imgWidth * left / 100) + "px";
+        link.style.top = (imgHeight * top / 100) + "px";
+        link.style.width = (imgWidth * width / 100) + "px";
+        link.style.height = (imgHeight * height / 100) + "px";
     });
 }
 
-window.addEventListener("load", positionLinks);
+
+/* 이미지가 이미 캐시된 경우 */
+const newsletterImg = document.getElementById("newsletterImg");
+
+if (newsletterImg.complete) {
+    positionLinks();
+}
+
+
+/* 이미지 로딩 완료 */
+newsletterImg.addEventListener("load", positionLinks);
+
+
+/* 브라우저 크기 변경 */
 window.addEventListener("resize", positionLinks);
-document.getElementById("newsletterImg").addEventListener("load", positionLinks);
+
+
+/* 전체 페이지 로딩 완료 */
+window.addEventListener("load", positionLinks);
+
 </script>
 
 </body>
