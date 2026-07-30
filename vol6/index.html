@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TeX-Corps Insight 제06호</title>
+
+<style>
+html, body {
+    margin: 0;
+    padding: 0;
+    background: #000;
+}
+
+body {
+    text-align: center;
+}
+
+.newsletter-wrap {
+    position: relative;
+    width: 100%;
+    max-width: 487px;
+    margin: 0 auto;
+    line-height: 0;
+}
+
+.newsletter-wrap img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.link-area {
+    position: absolute;
+    display: block;
+    z-index: 10;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+/* 링크 위치 확인 시 newsletter-wrap에 debug 클래스를 추가하세요.
+.newsletter-wrap.debug .link-area {
+    background: rgba(255, 0, 0, 0.25);
+    border: 1px solid red;
+}
+*/
+
+/* 상단 사업화 멘토링 플랫폼 모집 배너 */
+.link-main-banner {
+    left: 0%;
+    top: 7.958984%;
+    width: 100%;
+    height: 5.566406%;
+}
+
+/* 동문 이야기 */
+.link-story-1 {
+    left: 15.811088%;
+    top: 38.378906%;
+    width: 20.328542%;
+    height: 1.660156%;
+}
+
+.link-story-2 {
+    left: 60.780287%;
+    top: 38.378906%;
+    width: 21.149897%;
+    height: 1.611328%;
+}
+
+/* 동문 정보 공유: 우측 화살표 영역 */
+.link-alumni-1 {
+    left: 90.349076%;
+    top: 42.285156%;
+    width: 4.312115%;
+    height: 1.074219%;
+}
+
+.link-alumni-2 {
+    left: 90.349076%;
+    top: 44.189453%;
+    width: 4.312115%;
+    height: 1.074219%;
+}
+
+.link-alumni-3 {
+    left: 90.349076%;
+    top: 46.142578%;
+    width: 4.312115%;
+    height: 1.074219%;
+}
+
+.link-alumni-4 {
+    left: 90.349076%;
+    top: 48.095703%;
+    width: 4.312115%;
+    height: 1.074219%;
+}
+
+.link-alumni-5 {
+    left: 90.349076%;
+    top: 50.048828%;
+    width: 4.312115%;
+    height: 1.074219%;
+}
+
+/* 여섯 번째 동문 정보 공유 항목은 링크가 제공되지 않아 제외 */
+
+/* 텍스코어 원티드 */
+.link-wanted-1 {
+    left: 8.624230%;
+    top: 58.837891%;
+    width: 45.174538%;
+    height: 0.830078%;
+}
+
+.link-wanted-2 {
+    left: 8.624230%;
+    top: 60.107422%;
+    width: 54.004107%;
+    height: 0.830078%;
+}
+
+.link-wanted-3 {
+    left: 8.624230%;
+    top: 61.328125%;
+    width: 52.977413%;
+    height: 0.976563%;
+}
+
+.link-wanted-4 {
+    left: 8.624230%;
+    top: 62.646484%;
+    width: 40.862423%;
+    height: 0.878906%;
+}
+
+.link-wanted-5 {
+    left: 8.829569%;
+    top: 63.964844%;
+    width: 48.870637%;
+    height: 0.830078%;
+}
+
+/* 이달의 Pick! 지원사업 */
+.link-pick-1 {
+    left: 8.829569%;
+    top: 68.212891%;
+    width: 49.281314%;
+    height: 0.927734%;
+}
+
+.link-pick-2 {
+    left: 9.034908%;
+    top: 69.531250%;
+    width: 82.956879%;
+    height: 0.927734%;
+}
+
+.link-pick-3 {
+    left: 9.034908%;
+    top: 70.800781%;
+    width: 77.823409%;
+    height: 0.927734%;
+}
+
+.link-pick-4 {
+    left: 7.392197%;
+    top: 72.070313%;
+    width: 57.084189%;
+    height: 0.976563%;
+}
+
+.link-pick-5 {
+    left: 9.034908%;
+    top: 73.339844%;
+    width: 72.895277%;
+    height: 0.976563%;
+}
+
+.link-pick-6 {
+    left: 7.392197%;
+    top: 74.658203%;
+    width: 68.788501%;
+    height: 0.830078%;
+}
+
+.link-pick-7 {
+    left: 9.240246%;
+    top: 75.927734%;
+    width: 63.039014%;
+    height: 0.830078%;
+}
+
+/* 의견 남기기 */
+.link-opinion {
+    left: 39.219713%;
+    top: 82.031250%;
+    width: 21.560575%;
+    height: 1.904297%;
+}
+
+/* 하단 버튼 */
+.link-home {
+    left: 2.669405%;
+    top: 85.156250%;
+    width: 30.800821%;
+    height: 2.978516%;
+}
+
+.link-contact {
+    left: 34.702259%;
+    top: 85.205078%;
+    width: 31.006160%;
+    height: 2.734375%;
+}
+
+.link-archive {
+    left: 66.529774%;
+    top: 85.156250%;
+    width: 31.416838%;
+    height: 2.783203%;
+}
+</style>
+</head>
+
+<body>
+
+<div class="newsletter-wrap">
+    <img src="texcorps_insight_vol6.png" alt="TeX-Corps Insight 제06호 뉴스레터">
+
+    <!-- 상단 사업화 멘토링 플랫폼 지원기업 모집 -->
+    <a class="link-area link-main-banner"
+       href="https://compa.re.kr/cop/bbs/rnw/selectBoardArticle.do?bbsId=BBSMSTR_DDDDDDDDDDDD&amp;nttId=3949&amp;goMenuNo=1232100"
+       target="_blank" rel="noopener noreferrer"
+       aria-label="2026 사업화 멘토링 플랫폼 지원기업 모집"></a>
+
+    <!-- 동문 이야기 -->
+    <a class="link-area link-story-1"
+       href="https://blog.naver.com/texcorps/224362793027"
+       target="_blank" rel="noopener noreferrer"
+       aria-label="과학기술 창업경진대회 결선 임박 동문 기업들의 기록"></a>
+
+    <a class="link-area link-story-2"
+       href="https://blog.naver.com/texcorps/224362993854"
+       target="_blank" rel="noopener noreferrer"
+       aria-label="알데바 김진오 대표 동문 이야기"></a>
+
+    <!-- 동문 정보 공유 -->
+    <a class="link-area link-alumni-1"
+       href="https://www.thebell.co.kr/front/newsview.asp?click=F&amp;key=202607231013144760108579"
+       target="_blank" rel="noopener noreferrer"
+       aria-label="에이드바이오 관련 기사"></a>
+
+    <a class="link-area link-alumni-2"
+       href="https://www.edaily.co.kr/News/Read?newsId=03916326645519440&amp;mediaCodeNo=257&amp;OutLnkChk=Y"
+       target="_blank" rel="noopener noreferrer"
+       aria-label="에스오에스랩 관련 기사"></a>
+
+    <a class="link-area link-alumni-3"
+       href="https://mimetics.co.kr/archives/2197"
+       target="_blank" rel="noopener noreferrer"
+       aria-label="미메틱스 관련 소식"></a>
+
+    <a class="link-area link-alumni-4"
+       href="https://www.sedaily.com/article/20072867?ref=naver"
+       target="_blank" rel="noopener noreferrer"
+       aria-label="나르마 관련 기사"></a>
+
+    <a class="link-area link-alumni-5"
+       href="https://www.mt.co.kr/future/2026/07/23/2026072307533099031"
+       target="_blank" rel="noopener noreferrer"
+       aria-label="임지티 관련 기사"></a>
+
+    <!-- 텍스코어 원티드 -->
+    <a class="link-area link-wanted-1"
+       href="https://www.saramin.co.kr/zf_user/company-info/view-inner-recruit/csn/MjhEWWFTQkdXZzVOYVl0YTA0YXo4UT09/company_nm/%EB%82%98%EB%85%B8%EC%9D%BC%EB%A0%89%ED%8A%B8%EB%A1%9C%EB%8B%89%EC%8A%A4(%EC%A3%BC)"
+       target="_blank" rel="noopener noreferrer"
+       aria-label="나노일렉트로닉스 채용"></a>
+
+    <a class="link-area link-wanted-2"
+       href="https://www.saramin.co.kr/zf_user/company-info/view-inner-recruit/csn/dlU3ejBxQ3ZPQ0JwOHp1ZTdTejN6dz09/company_nm/(%EC%A3%BC)%ED%8F%B4%EB%9D%BC%EB%A6%AC%EC%8A%A4%EC%93%B0%EB%A6%AC%EB%94%94"
+       target="_blank" rel="noopener noreferrer"
+       aria-label="폴라리스쓰리디 채용"></a>
+
+    <a class="link-area link-wanted-3"
+       href="https://www.jobkorea.co.kr/recruit/co_read/recruit/c/classum"
+       target="_blank" rel="noopener noreferrer"
+       aria-label="클라썸 채용"></a>
+
+    <a class="link-area link-wanted-4"
+       href="https://www.jobkorea.co.kr/Recruit/GI_Read/49667618"
+       target="_blank" rel="noopener noreferrer"
+       aria-label="문앤서지랩 채용"></a>
+
+    <a class="link-area link-wanted-5"
+       href="https://www.saramin.co.kr/zf_user/company-info/view-inner-recruit?csn=cExKTFZoOVBHK20xRXVHZVBSRnorQT09"
+       target="_blank" rel="noopener noreferrer"
+       aria-label="팀모프리스 채용"></a>
+
+    <!-- 이달의 Pick! 지원사업 -->
+    <a class="link-area link-pick-1"
+       href="https://compa.re.kr/cop/bbs/rnw/selectBoardArticle.do?bbsId=BBSMSTR_DDDDDDDDDDDD&amp;nttId=3949&amp;goMenuNo=1232100"
+       target="_blank" rel="noopener noreferrer"
+       aria-label="2026 사업화 멘토링 플랫폼 지원기업 모집"></a>
+
+    <a class="link-area link-pick-2"
+       href="https://www.compa.re.kr/cop/bbs/rnw/selectBoardArticle.do?bbsId=BBSMSTR_DDDDDDDDDDDD&amp;goMenuNo=1232100&amp;nttId=4026&amp;pageIndex=1"
+       target="_blank" rel="noopener noreferrer"
+       aria-label="유레카 ITEA Project Outline Preparation Days 2026 파트너링 사전단 참가기업 모집"></a>
+
+    <a class="link-area link-pick-3"
+       href="https://www.kiat.or.kr/front/board/boardContentsView.do?contents_id=e97ca958388844e8bd41601aaf053acb"
+       target="_blank" rel="noopener noreferrer"
+       aria-label="지원사업 공고"></a>
+
+    <a class="link-area link-pick-4"
+       href="https://www.iris.go.kr/contents/retrieveBsnsAncmView.do?ancmId=022717&amp;ancmPrg="
+       target="_blank" rel="noopener noreferrer"
+       aria-label="2026년도 3차 국민생활안전 긴급대응연구 기술개발 및 실증 신규과제 공고"></a>
+
+    <a class="link-area link-pick-5"
+       href="https://www.nipa.kr/home/bsnsAll/3/nttDetail?bbsNo=4&amp;nttNo=16852"
+       target="_blank" rel="noopener noreferrer"
+       aria-label="전 국민 AI 서비스 보편적 활용 지원 사업 공고"></a>
+
+    <a class="link-area link-pick-6"
+       href="https://www.nrf.re.kr/biz/notice/view?ac=view&amp;searchType=&amp;searchText=&amp;pageNum=1&amp;postNo=277582&amp;menuNo=362&amp;bizNo=663&amp;searchBizNo=0&amp;bizNotGubn=guide&amp;bizCompleteNm=&amp;orderType=REG_DTTM&amp;orderTypeBiz=BIZ_DYSC_END_DATE_ORDER&amp;orderTypeAt=DESC&amp;orderTypeBizAt=DESC&amp;myBizCheckYn=&amp;bizChgMbrNo=&amp;myDeptBizCheckYn=&amp;bizChgMbrPostNm=&amp;bizSelectSearchRegDttm=&amp;regStartDttm=&amp;regEndDttm=&amp;searchRegChoiceDttm=M&amp;bizSearchRegDttmAllYn=N&amp;searchRegYearDttm=2026&amp;searchRegStartMonthDttm=07&amp;searchRegEndMonthDttm=07&amp;searchSplitBizNo=&amp;keyword=&amp;resultKeyword="
+       target="_blank" rel="noopener noreferrer"
+       aria-label="2026년도 바이오 의료기술개발사업 첨단바이오 연구교류 프로그램 공고"></a>
+
+    <a class="link-area link-pick-7"
+       href="https://www.kiat.or.kr/front/board/boardContentsView.do?contents_id=c5a56356c76a4c9ab073cd1727d97be2"
+       target="_blank" rel="noopener noreferrer"
+       aria-label="Enterprise Europe Network 한국 컨소시엄 참여기관 전담 추가 공고"></a>
+
+    <!-- 의견 남기기 -->
+    <a class="link-area link-opinion"
+       href="https://docs.google.com/forms/d/e/1FAIpQLScAcJN2DJX9pIsy7vGj6ojufuE53O_m8nA19nUp5QqANSuTcg/viewform?usp=header"
+       target="_blank" rel="noopener noreferrer"
+       aria-label="뉴스레터 의견 남기기"></a>
+
+    <!-- 하단 버튼 -->
+    <a class="link-area link-home"
+       href="https://www.compa.re.kr/cmm/rnw/main/mainPage.do"
+       target="_blank" rel="noopener noreferrer"
+       aria-label="홈페이지 바로가기"></a>
+
+    <a class="link-area link-contact"
+       href="https://docs.google.com/forms/d/e/1FAIpQLScAcJN2DJX9pIsy7vGj6ojufuE53O_m8nA19nUp5QqANSuTcg/viewform?usp=header"
+       target="_blank" rel="noopener noreferrer"
+       aria-label="문의하기"></a>
+
+    <a class="link-area link-archive"
+       href="https://texcorps.stibee.com/"
+       target="_blank" rel="noopener noreferrer"
+       aria-label="지난 호 보기"></a>
+</div>
+
+</body>
+</html>
